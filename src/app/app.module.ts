@@ -26,7 +26,6 @@ import { routing } from './app.routing';
   ],
   imports: [
     BrowserModule,
-    Angular2TokenService,
     MaterializeModule.forRoot(),
     ColorPickerModule,
     ChartsModule,
@@ -36,7 +35,7 @@ import { routing } from './app.routing';
     RouterModule,
     routing
   ],
-  providers: [],
+  providers: [Angular2TokenService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
