@@ -5,6 +5,7 @@ import { ColorPickerModule } from 'ngx-color-picker';
 import { ChartsModule } from 'ng2-charts';
 import { Angular2TokenService } from 'angular2-token';
 
+import { FormService } from './shared/form.service';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
@@ -35,7 +36,7 @@ import { routing } from './app.routing';
     RouterModule,
     routing
   ],
-  providers: [Angular2TokenService],
+  providers: [Angular2TokenService, FormService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
