@@ -7,6 +7,7 @@ import { Angular2TokenService } from 'angular2-token';
 
 import { FormService } from './shared/form.service';
 import { QuestionService } from './shared/question.service';
+import { AnswerService } from './answers/shared/answer.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -41,7 +42,8 @@ import { routing } from './app.routing';
   providers: [
     Angular2TokenService, 
     FormService,
-    QuestionService
+    QuestionService,
+    AnswerService
   ],
   bootstrap: [AppComponent]
 })
